@@ -1,5 +1,4 @@
 import pandas as pd
-
 a = [1, 7, 2]
 
 varSeries = pd.Series(a)
@@ -20,4 +19,13 @@ print(varCalories)
 varSelectedDay = pd.Series(calories, index=["day1", "day2"])
 
 print(varSelectedDay)
+
+data = {
+    "calories": [420, 380, 390],
+    "duration": [50, 40, 45]
+}
+
+varData = pd.DataFrame(data)
+
+print(data)
 
